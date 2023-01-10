@@ -86,7 +86,7 @@ function NewQuestionForm({ handleClose, currentQuestion }) {
                     <Grid item xs={12} md={12} xl={8}>
                         <Card sx={{ p: 3 }}>
                             <Typography variant="h6" my={2} gutterBottom>
-                                {"Create New Quiz"}
+                                {currentQuestion === null ? "Add New Question" : "Update question"}
                             </Typography>
                             <Box
                                 sx={{

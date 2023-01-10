@@ -9,8 +9,8 @@ export const loginUser = createAsyncThunk(
         "Content-Type": "application/json",
       };
       const res = await axios.post(
-        `${process.env.REACT_APP_BACKEND_API}/auth/login`,
-        { user },
+        `${process.env.REACT_APP_BACKEND_API}/admins/login`,
+        user,
         { headers }
       );
       return res.data;

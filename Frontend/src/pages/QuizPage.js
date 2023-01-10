@@ -169,7 +169,7 @@ export default function QuizPage() {
   return (
     <>
       <Helmet>
-        <title> Quiz | Minimal UI </title>
+        <title> Quiz | CA195 </title>
       </Helmet>
 
       <Container>

@@ -1,8 +1,5 @@
 import { Icon } from '@iconify/react';
 
-// component
-import SvgColor from '../../../components/svg-color';
-
 // ----------------------------------------------------------------------
 
 // const icon = (name) => <SvgColor src={`/assets/icons/navbar/${name}.svg`} sx={{ width: 1, height: 1 }} />;
@@ -34,8 +31,8 @@ const navConfig = [
     icon: <Icon icon='mdi:paper-check-outline' fontSize={25}/>,
   },
   {
-    title: 'login',
-    path: '/login',
+    title: 'logout',
+    path: '/logout',
     icon: <Icon icon='mdi:login' fontSize={25}/>,
   },
 ];

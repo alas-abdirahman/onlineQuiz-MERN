@@ -168,7 +168,7 @@ export default function StudentPage() {
   return (
     <>
       <Helmet>
-        <title> Students | Minimal UI </title>
+        <title> Students | CA195 </title>
       </Helmet>
 
       <Container>

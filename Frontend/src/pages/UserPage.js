@@ -184,7 +184,7 @@ export default function UserPage() {
   return (
     <>
       <Helmet>
-        <title> Admin | Minimal UI </title>
+        <title> Admin | CA195 </title>
       </Helmet>
 
       <Container>

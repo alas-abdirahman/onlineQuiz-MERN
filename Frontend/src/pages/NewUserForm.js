@@ -85,7 +85,7 @@ function NewUserForm({ handleClose, currentUser = null }) {
                     <Grid item xs={12} md={12} xl={8}>
                         <Card sx={{ p: 3 }}>
                             <Typography variant="h6" my={2} gutterBottom>
-                                {"Create New Admin"}
+                                {currentUser === null ? "Create New Admin" : "Update Admin"}
                             </Typography>
                             <Box
                                 sx={{

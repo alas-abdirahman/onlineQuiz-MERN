@@ -82,7 +82,7 @@ function NewStudentForm({ handleClose, currentStudent = null }) {
                     <Grid item xs={12} md={12} xl={8}>
                         <Card sx={{ p: 3 }}>
                             <Typography variant="h6" my={2} gutterBottom>
-                                {"Create New Student"}
+                                {currentStudent === null ? "Create New Student" : "Update student"}
                             </Typography>
                             <Box
                                 sx={{

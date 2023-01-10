@@ -173,7 +173,7 @@ export default function QuestionPage() {
     return (
         <>
             <Helmet>
-                <title> Questions | Minimal UI </title>
+                <title> Questions | CA195 </title>
             </Helmet>
 
             <Container>
