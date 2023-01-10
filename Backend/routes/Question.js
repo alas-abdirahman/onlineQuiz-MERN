@@ -9,7 +9,6 @@ router.get('/', async (req, res) => {
     .populate([
       { path: "quiz" }
     ]).exec();
-    console.log(questions);
     res.send({
       message: 'show all questions',
       questions,

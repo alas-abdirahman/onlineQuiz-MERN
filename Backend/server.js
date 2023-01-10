@@ -7,25 +7,18 @@ const Quiz = require('./routes/Quiz');
 const Student = require('./routes/Student');
 const Admin = require('./routes/Admin');
 const Question = require('./routes/Question');
+const connectDB = require("./config/Database");
 
 const app = express();
 
+connectDB();
 // TODO: some configuration
 app.use(express.json());
 app.use(cors());
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
-// TODO: connect to the mongoDB Provider
-mongoose.connect('mongodb+srv://alas:212320Alas@archivescloud.aa6x22o.mongodb.net/?retryWrites=true&w=majority', {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-});
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error: "));
-db.once("open", function () {
-  console.log("Connected successfully");
-});
+
 // TODO: Check the API
 app.get('/', (req, res) => {
   res.send({ status: 'API Working !!!' });
